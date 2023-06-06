@@ -8,8 +8,6 @@ body {
 
 * {
   box-sizing: border-box;
-  scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
 }
 
 .myH1 {
@@ -37,7 +35,6 @@ body {
   margin: auto;
   overflow: hidden;
   margin-top: 100px;
-  box-shadow: 10 px 10px 15 px rgba(0,0,0,0.50);
 }
 
 .carousel, ul {
@@ -70,26 +67,35 @@ body {
 
 .carousel-container img {
   width: auto;
-  max-height: 200px;
+  height: auto;
+  max-width: 600px;
+  max-height: 300px;
+  display: block;
   padding: 0 80px;
 }
 
 .carousel ul {
-  animation: slide-animation 15s infinite;
+  animation: slide-animation 20s infinite;
 }
 
 .carousel ul:hover {
   animation-play-state: paused;
 }
 
+
+/* 100% divided by 6 logos = 16.67 = 15% increase */
 @keyframes slide-animation {
-  20%{left: 0}
-  25%{left: -600px}
-  45%{left: -600px}
-  50%{left: -1200px}
-  70%{left: -1200px}
-  75%{left: -1800px}
-  98%{left: -1800px}
+  15%{left: 0}
+  20%{left: -600px}
+  30%{left: -600px}
+  35%{left: -1200px}
+  45%{left: -1200px}
+  50%{left: -1800px}
+  60%{left: -1800px}
+  65%{left: -2400px}
+  75%{left: -2400px}
+  88%{left: -3000px}
+  98%{left: -3000px}
   100%{left: 0}
 }
 
